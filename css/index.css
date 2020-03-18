@@ -3,5 +3,117 @@
     height: 455px;
     margin-left:219px;
     margin-top:10px;
+}
+.focus {
+    position: relative;
+    float:left;
+    width: 720px;
+    height: 455px;
+}
+.newsflash {
+    float:right;
+    width: 250px;
+    height: 455px;
+}
+.arrow-l,
+.arrow-r {
+    /* 浮动和定位的行内元素 可以直接设置宽高(行内元素不能设置宽高) */
+    position:absolute;
+    top:50%;
+    width: 24px;
+    height: 40px;
+    background-color:rgba(0,0,0, .3);
+    text-align:center;
+    line-height:40px;
+    font-family:'icomoon';
+    font-size:18px;
+    transform:translateY(-50%);
+
+}
+.arrow-l {
+    left:0;
+}
+.arrow-r {
+    right:0;
+}
+.circle {
+    position:absolute;
+    bottom:10px;
+    left:50px;
+}
+.circle li {
+    float:left;
+    width:8px;
+    height: 8px;
+    border:1px solid rgba(255,255,255,.3);
+    margin:0 5px;
+    border-radius: 56%;
+    cursor:pointer;
+}
+.current {
+    background-color: #fff;
+}
+/* newsflash */
+.news {
+    height:163px;
+    border:1px solid #ccc;
+}
+.news-hd {
+    height: 32px;
+    /* 
+        solid 实线
+        dotted 点线
+        dashed 虚线
+    */
+    border-bottom:1px dotted #ccc;
+    padding:0 15px;
+    font-size:14px;
+    line-height:32px;
+}
+.news-hd a {
+    float:right;
+    font-size:12px;
+    font-family: 'icomoon';
+}
+.news-bd {
+    padding:10px 0 0 15px;
+}
+.news-bd li {
+    height:23px;
+}
+.lifeservice {
+    height: 208px;
+    border:1px solid #ccc;
+    border-top:none;
+    overflow:hidden;
+}
+.lifeservice ul {
+    width: 252px;
+}
+.lifeservice li {
+    float:left;
+    width: 62px;
+    height: 70px;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+.lifeservice li a {
+    display:block;
+    height:100%;
+    /* 触发BFC */
+    overflow:hidden;
+}
+.lifeservice li a p {
+    text-align:center;
+}
+.service_ico {
+    display:block;
+    width: 24px;
+    height: 24px;
     background-color: pink;
+    margin:10px auto;
+}
+.bargain {
+    height: 75px;
+    margin-top:5px;
 }
